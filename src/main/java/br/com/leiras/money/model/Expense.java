@@ -3,14 +3,14 @@ package br.com.leiras.money.model;
 import java.io.Serializable;
 import java.util.Date;
 
-public class Despesa implements Serializable {
+public class Expense implements Serializable {
 
 	private static final long serialVersionUID = 363589248827729318L;
 	private Integer id;
-	private Float valor;
-	private Date data;
+	private Float value;
+	private Date date;
 
-	public Despesa() {
+	public Expense() {
 	}
 
 	public Integer getId() {
@@ -21,20 +21,20 @@ public class Despesa implements Serializable {
 		this.id = id;
 	}
 
-	public Float getValor() {
-		return valor;
+	public Float getValue() {
+		return value;
 	}
 
-	public void setValor(Float valor) {
-		this.valor = valor;
+	public void setValue(Float value) {
+		this.value = value;
 	}
 
-	public Date getData() {
-		return data;
+	public Date getDate() {
+		return date;
 	}
 
-	public void setData(Date data) {
-		this.data = data;
+	public void setDate(Date date) {
+		this.date = date;
 	}
-	
+
 }

@@ -2,14 +2,14 @@ package br.com.leiras.money.service;
 
 public class ServiceFactory {
 	
-	private static DespesaService despesaSevice = null;
+	private static ExpenseService expenseSevice = null;
 	
 	
-	public static synchronized DespesaService getDespesaService() {
-		if (ServiceFactory.despesaSevice == null) {
-			ServiceFactory.despesaSevice = new DespesaService();
+	public static synchronized ExpenseService getExpenseService() {
+		if (ServiceFactory.expenseSevice == null) {
+			ServiceFactory.expenseSevice = new ExpenseService();
 		}
-		return ServiceFactory.despesaSevice;
+		return ServiceFactory.expenseSevice;
 	}
 
 }
