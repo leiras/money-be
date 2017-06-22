@@ -17,7 +17,7 @@ import javax.ws.rs.core.Response;
 import br.com.leiras.money.model.Expense;
 import br.com.leiras.money.service.ServiceFactory;
 
-@Path("/despesas")
+@Path("/expenses")
 public class ExpenseResource {
 	
     @GET

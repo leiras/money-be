@@ -9,6 +9,7 @@ public class Expense implements Serializable {
 	private Integer id;
 	private Float value;
 	private Date date;
+	private Category category;
 
 	public Expense() {
 	}
@@ -36,5 +37,13 @@ public class Expense implements Serializable {
 	public void setDate(Date date) {
 		this.date = date;
 	}
+
+	public Category getCategory() {
+		return category;
+	}
+
+	public void setCategory(Category category) {
+		this.category = category;
+	}	
 
 }
